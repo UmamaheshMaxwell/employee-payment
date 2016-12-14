@@ -9,5 +9,5 @@ module.exports = {
 	CWD: process.cwd(),
 	DB_USERNAME: 'root',
 	DB_PASSWORD: 'root',
-	DB_NAME: 'database_development'
+	DB_NAME: 'database_test'
 }

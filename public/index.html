@@ -1,0 +1,64 @@
+<html ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Employee Payment</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<h1>Employee Payment Details</h1>
+		<table class="table" ng-controller="myController">
+			<thead>
+				<tr>
+					<th>FirstName</th>
+					<th>LastName</th>
+					<th>Salary</th>
+					<th>Rate Of Interest</th>
+					<th>Payment StartDate</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<input type="text" class="form-control" ng-model="employee.firstName">
+					</td>
+					<td>
+						<input type="text" class="form-control" ng-model="employee.lastName">
+					</td>
+					<td>
+						<input type="text" class="form-control" ng-model="employee.salary">
+					</td>
+					<td>
+						<input type="text" class="form-control" ng-model="employee.rateOfInterest">
+					</td>
+					<td>
+						<input type="text" class="form-control" ng-model="employee.paymentStartDate">
+					</td>											
+					<td>
+						<button class="btn btn-primary" ng-click="getPaySlip()">Get Payslip</button>
+					</td>
+					<td>
+						<button class="btn btn-info" ng-click="clear()">Reset</button>
+					</td>
+				</tr>
+				<tr ng-repeat="employee in employeeData">
+					<td>{{employee.firstName}}</td>
+					<td>{{employee.lastName}}</td>
+					<td>{{employee.salary}}</td>
+					<td>{{employee.paymentStartDate}}</td>
+					<td>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+	<script type="text/javascript" src="controller.js"></script>
+</body>
+</html>

@@ -1,26 +1,4 @@
-{"level":"error","message":"Something failed during mongo connect: Cannot find module 'promise'","timestamp":"2016-12-14T05:24:35.207Z"}
-{"level":"error","message":"path is not defined","timestamp":"2016-12-14T06:34:39.869Z"}
-{"level":"error","message":"path is not defined","timestamp":"2016-12-14T06:35:17.455Z"}
-{"level":"error","message":"path is not defined","timestamp":"2016-12-14T06:35:18.504Z"}
-{"level":"error","message":"ENOENT: no such file or directory, stat 'D:\\Projects\\employee-payment\\lib\\routes\\public\\index.html'","timestamp":"2016-12-14T06:35:46.956Z"}
-{"level":"error","message":"path must be absolute or specify root to res.sendFile","timestamp":"2016-12-14T06:36:42.272Z"}
-{"level":"error","message":"ENOENT: no such file or directory, stat 'D:\\Projects\\employee-payment\\lib\\routes\\index.html'","timestamp":"2016-12-14T06:37:30.194Z"}
-{"level":"error","message":"ENOENT: no such file or directory, stat 'D:\\Projects\\employee-payment\\lib\\routes\\public\\index.html'","timestamp":"2016-12-14T06:42:01.745Z"}
-{"level":"error","message":"ENOENT: no such file or directory, stat 'D:\\Projects\\employee-payment\\lib\\public\\index.html'","timestamp":"2016-12-14T06:42:54.673Z"}
-{"level":"error","message":"path must be absolute or specify root to res.sendFile","timestamp":"2016-12-14T06:44:59.105Z"}
-{"level":"error","message":"ENOENT: no such file or directory, stat 'D:\\Projects\\employee-payment\\public\\public\\index.html'","timestamp":"2016-12-14T06:46:03.755Z"}
-{"level":"error","message":"Path must be a string. Received undefined","timestamp":"2016-12-14T07:46:49.712Z"}
-{"level":"error","message":"Path must be a string. Received undefined","timestamp":"2016-12-14T07:50:55.339Z"}
-{"level":"error","message":"Path must be a string. Received undefined","timestamp":"2016-12-14T07:53:38.449Z"}
-{"level":"error","message":"ENOENT: no such file or directory, open 'D:\\Projects\\employee-payment\\fonts\\PalatinoBold.ttf'","timestamp":"2016-12-14T08:10:45.836Z"}
-{"level":"error","message":"ENOENT: no such file or directory, open 'D:\\Projects\\employee-payment\\fonts\\PalatinoBold.ttf'","timestamp":"2016-12-14T08:11:36.096Z"}
-{"level":"error","message":"pdf is not defined","timestamp":"2016-12-14T08:12:23.111Z"}
-{"level":"error","message":"path must be absolute or specify root to res.sendFile","timestamp":"2016-12-14T08:37:23.369Z"}
-{"level":"error","message":"fs is not defined","timestamp":"2016-12-14T08:50:36.916Z"}
-{"level":"error","message":"res is not defined","timestamp":"2016-12-14T08:51:00.453Z"}
-{"level":"error","message":"path argument is required to res.sendFile","timestamp":"2016-12-14T08:51:41.859Z"}
-{"level":"error","message":"Converting circular structure to JSON","timestamp":"2016-12-14T08:53:58.787Z"}
-{"level":"error","message":"res is not defined","timestamp":"2016-12-14T08:56:43.695Z"}
-{"level":"error","message":"Cannot read property 'setHeader' of undefined","timestamp":"2016-12-14T08:57:02.832Z"}
-{"level":"error","message":"data is not defined","timestamp":"2016-12-14T09:05:43.532Z"}
-{"level":"error","message":"data is not defined","timestamp":"2016-12-14T09:07:45.867Z"}
+{"level":"error","message":"Cannot read property 'toString' of undefined","timestamp":"2016-12-15T05:47:38.849Z"}
+{"level":"error","message":"Cannot read property 'toString' of undefined","timestamp":"2016-12-15T05:48:01.493Z"}
+{"level":"error","message":"Cannot read property 'toString' of undefined","timestamp":"2016-12-15T05:48:16.676Z"}
+{"level":"error","message":"regex.tes is not a function","timestamp":"2016-12-15T08:39:51.535Z"}

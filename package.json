@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+     "test": " node ./node_modules/mocha/bin/mocha",
     "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/UmamaheshMaxwell/employee-payment.git"
   },
-  "author": "",
+  "author": "Umamaheswararao Meka",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/UmamaheshMaxwell/employee-payment/issues"
@@ -26,11 +26,13 @@
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "lodash": "^4.17.2",
+    "moment": "^2.17.1",
     "mongoose": "^4.7.2",
     "morgan": "^1.7.0",
     "nodemon": "^1.11.0",
     "pdfkit": "^0.8.0",
     "promise": "^7.1.1",
+    "underscore": "^1.8.3",
     "winston": "^2.3.0"
   }
 }

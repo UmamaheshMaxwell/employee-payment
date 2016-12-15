@@ -4,14 +4,23 @@
 	<title>Employee Payment</title>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+ rel = "stylesheet">
+<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <script>
+         $(function() {
+            // $("#paymentStartDate").datepicker();
+            // $("#paymentStartDate").datepicker({ constrainInput: false });        
+         });
+      </script>
 </head>
 <body>
-	<div class="container">
+	<div class="container" ng-controller="myController">
 		<h1>Employee Payment Details</h1>
-		<table class="table" ng-controller="myController">
+		<table class="table" >
 			<thead>
 				<tr>
 					<th>FirstName</th>
@@ -36,7 +45,7 @@
 						<input type="text" class="form-control" ng-model="employee.rateOfInterest">
 					</td>
 					<td>
-						<input type="text" class="form-control" ng-model="employee.paymentStartDate">
+						<input type="text" class="form-control" ng-model="employee.paymentStartDate" id="paymentStartDate">
 					</td>											
 					<td>
 						<button class="btn btn-primary" ng-click="getPaySlip()">Get Payslip</button>
@@ -55,9 +64,29 @@
 				</tr>
 			</tbody>
 		</table>
-		
+		<table class="table" ng-show="employeePayslip != null">
+			<thead>
+				<tr>
+					<th>FullName</th>
+					<th>PayPeriod</th>
+					<th>GrossIncome</th>
+					<th>Incometax</th>
+					<th>NetIncome</th>
+					<th>SuperRate</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>{{employeePayslip.fullname}}</td>
+					<td>{{employeePayslip.payPeriod}}</td>
+					<td>{{employeePayslip.grossIncome}}</td>
+					<td>{{employeePayslip.incometax}}</td>
+					<td>{{employeePayslip.netIncome}}</td>
+					<td>{{employeePayslip.superRate}}</td>
+				</tr>
+			</tbody>
+		</table>		
 	</div>
-
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
 	<script type="text/javascript" src="controller.js"></script>
 </body>

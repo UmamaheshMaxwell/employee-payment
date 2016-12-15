@@ -33,7 +33,7 @@ describe("Calculation Test Suite", function(){
 			  lastName : "Meka",
 			  salary : "60,050",
 			  rateOfInterest : 9,
-			  paymentStartDate : "01 April – 31 April"		
+			  paymentStartDate : "01 March – 31 March"		
 		}
 		var annualSalary = "60,050"
 		var payslip =	calculation.calculateSalaryComponents(employeeInfo.firstName,
@@ -44,7 +44,7 @@ describe("Calculation Test Suite", function(){
 
 		payslip.should.be.an("object");
 		payslip.should.have.property("fullname", "Umamaheswararao Meka");
-		payslip.should.have.property("payPeriod", "01 April – 31 April");
+		payslip.should.have.property("payPeriod", "01 March – 31 March");
 		payslip.should.have.property("grossIncome").be.equal(5004);
 		payslip.should.have.property("incometax").be.equal(922);
 		payslip.should.have.property("netIncome").be.equal(4082);

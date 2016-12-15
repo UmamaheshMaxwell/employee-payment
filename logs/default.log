@@ -429,3 +429,7 @@
 {"level":"info","message":"Succeefully connected to database_development","timestamp":"2016-12-15T08:40:06.846Z"}
 {"level":"info","message":"Registering routes","timestamp":"2016-12-15T08:40:06.881Z"}
 {"level":"info","message":"Set application configuration","timestamp":"2016-12-15T08:40:07.241Z"}
+{"level":"info","message":"Connecting to database_development","timestamp":"2016-12-15T10:34:16.480Z"}
+{"level":"info","message":"Succeefully connected to database_development","timestamp":"2016-12-15T10:34:17.853Z"}
+{"level":"info","message":"Registering routes","timestamp":"2016-12-15T10:34:17.931Z"}
+{"level":"info","message":"Set application configuration","timestamp":"2016-12-15T10:34:18.165Z"}
